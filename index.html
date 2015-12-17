@@ -18,6 +18,7 @@
             var waveLg = svgDoc.getElementById("large");
 			var off=svgDoc.getElementById("micoff");
 			var michover=svgDoc.getElementById("michover");
+			var classname = svgDoc.getElementsByClassName("hello");
 			var ondisplay=true;
 				on.style.display="none";
 				off.style.display="none";
@@ -39,11 +40,11 @@
 				ondisplay=true;
 				}
 			});
-				mic.addEventListener("mouseover",function()
+				classname.addEventListener("mouseover",function()
 			{              
 				michover.style.display="none";
 			}); 
-				mic.addEventListener("mouseout",function()
+				classname.addEventListener("mouseout",function()
 			{
 				michover.style.display="inline";
 				on.style.display="none";
