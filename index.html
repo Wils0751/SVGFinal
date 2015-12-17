@@ -47,11 +47,16 @@
 			{
 				michover.style.display="inline";
 				on.style.display="none";
-				off.style.display="none";
+			});
+				off.addEventListener("mouseover",function()
+			{
+				michover.style.display="none";
+			});
+				off.addEventListener("mouseout",function()
+			{
+				michover.style.display="inline";
 			});
         });
     </script>
-
-
 </body>
 </html>
